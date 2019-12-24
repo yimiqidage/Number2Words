@@ -1,13 +1,14 @@
 # Number2Words
 
-1、项目作用：
+## 1、项目作用：
 金额的数字转换为大写
 
-2、输出结果对比： 
+## 2、输出结果对比： 
 https://spanishnumbers.guide/numbers-in-spanish.html
 
-3、输出结果示例：
+## 3、输出结果示例：
 
+```
 0:cero
 1:uno
 2:dos
@@ -65,3 +66,9 @@ https://spanishnumbers.guide/numbers-in-spanish.html
 200000:doscientos mil
 1000000:un millón
 2000000:dos millónes
+```
+## 4.代码修改位置
+
+1. 原生的代码里，跟上面网站的结果不一致，1000以上的，多了一个un。
+
+2. 修改 Spanish.POWER_NAMES ，将 un mil ->  mil 即可
